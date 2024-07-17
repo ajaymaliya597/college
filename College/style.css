@@ -1,0 +1,214 @@
+ 
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; 
+        }
+        /* .imgp {
+            height: 12vh;
+            position: absolute;
+            top: 10vh;
+            left: -2vh;
+        } */
+        img {
+            height: 36vw;
+            max-width: 100%; 
+        }
+        .fb {
+    height: 3.8vh;
+    position: relative;
+    top: 3.6vh;
+    left: -10vh;
+}
+
+
+        .box, .signup-box {
+            width: 16vw;/* Adjust width as per your design */
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #dbdbdb;
+            background-color: white;
+            padding: 1vw;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1vh;
+        }
+        .box1{
+            margin: 2vw;
+            height: 42vw;
+        }
+        /* .signup-box {
+            padding: 20px;
+        } */
+        .Finstagram {
+            font-family: 'Billabong', cursive;
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .blk {
+            display: grid;
+            gap: 10px;
+        }
+        .plc {
+            height: 35px;
+            padding: 0 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            background-color: #fafafa;
+        }
+        .btn {
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            height: 35px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #007bb5;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .rowele {
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #385185;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        .rowele:hover {
+            text-decoration: underline;
+        }
+        .or {
+            font-size: small;
+            color: #8e8e8e;
+            margin: 20px 0;
+        }
+        .signup {
+            font-size: small;
+            color: #8e8e8e;
+            margin-top: 20px;
+            width: 17rem;
+        }
+        .signup a {
+            color: #0095f6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .signup a:hover {
+            text-decoration: underline;
+        }
+        @font-face {
+            font-family: 'Billabong';
+            src: url('./billabong/Billabong.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @media (max-width: 600px) {
+            .box, .signup-box {
+                width: 90%;
+                padding: 20px;
+            }
+            .Finstagram {
+                font-size: 3rem;
+            }
+        }
+        .mainbox{
+            display: flex;
+        }
+        .instagram-footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+.instagram-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instagram-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.instagram-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.instagram-footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.instagram-footer ul li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.instagram-footer ul li a:hover {
+    color: #333;
+}
+
+.instagram-footer .social-icons {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.instagram-footer .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.instagram-footer .social-icons li a {
+    color: #999;
+    font-size: 18px;
+}
+
+.instagram-footer .social-icons li a:hover {
+    color: #333;
+}
+
+.instagram-footer .copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #ccc;
+}
+.utilc{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    align-items: center;
+}
+.util1{
+    height: 4vw;
+}
+.util2 {
+    height: 2.8vw;
+    border-radius: 4px;
+}
+
+
+ 

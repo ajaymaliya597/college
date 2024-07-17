@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finstagram</title>
+<!-- <link rel="stylesheet" href="style.css">  -->
+<style> 
+    body {
+        background-color: #fafafa;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        position: relative; 
+    }
+    /* .imgp {
+        height: 12vh;
+        position: absolute;
+        top: 10vh;
+        left: -2vh;
+    } */
+    img {
+        height: 36vw;
+        max-width: 100%; 
+    }
+    .fb {
+height: 3.8vh;
+position: relative;
+top: 3.6vh;
+left: -10vh;
+}
+
+
+    .box, .signup-box {
+        width: 16vw;/* Adjust width as per your design */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid #dbdbdb;
+        background-color: white;
+        padding: 1vw;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1vh;
+    }
+    .box1{
+        margin: 2vw;
+        height: 42vw;
+    }
+    /* .signup-box {
+        padding: 20px;
+    } */
+    .Finstagram {
+        font-family: 'Billabong', cursive;
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    .blk {
+        display: grid;
+        gap: 10px;
+    }
+    .plc {
+        height: 35px;
+        padding: 0 10px;
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        background-color: #fafafa;
+    }
+    .btn {
+        background-color: #0095f6;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        height: 35px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .btn:hover {
+        background-color: #007bb5;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .rowele {
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #385185;
+        cursor: pointer;
+        margin: 5px 0;
+    }
+    .rowele:hover {
+        text-decoration: underline;
+    }
+    .or {
+        font-size: small;
+        color: #8e8e8e;
+        margin: 20px 0;
+    }
+    .signup {
+        font-size: small;
+        color: #8e8e8e;
+        margin-top: 20px;
+        width: 17rem;
+    }
+    .signup a {
+        color: #0095f6;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .signup a:hover {
+        text-decoration: underline;
+    }
+    @font-face {
+        font-family: 'Billabong';
+        src: url('./billabong/Billabong.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @media (max-width: 600px) {
+        .box, .signup-box {
+            width: 90%;
+            padding: 20px;
+        }
+        .Finstagram {
+            font-size: 3rem;
+        }
+    }
+    .mainbox{
+        display: flex;
+        margin-left: 26vw;
+    }
+    .instagram-footer {
+background-color: #f9f9f9;
+padding: 20px 0;
+text-align: center;
+font-size: 14px;
+color: #999;
+}
+
+.instagram-footer .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.instagram-footer .footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 70%;
+}
+
+.instagram-footer ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.instagram-footer ul li {
+display: inline-block;
+margin-right: 15px;
+}
+
+.instagram-footer ul li a {
+color: #999;
+text-decoration: none;
+}
+
+.instagram-footer ul li a:hover {
+color: #333;
+}
+
+.instagram-footer .social-icons {
+display: inline-block;
+margin-left: auto;
+}
+
+.instagram-footer .social-icons li {
+display: inline-block;
+margin-right: 10px;
+}
+
+.instagram-footer .social-icons li a {
+color: #999;
+font-size: 18px;
+}
+
+.instagram-footer .social-icons li a:hover {
+color: #333;
+}
+
+.instagram-footer .copyright {
+margin-top: 10px;
+font-size: 12px;
+color: #ccc;
+}
+.utilc{
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+margin-top: 1vw;
+align-items: center;
+}
+.util1{
+height: 4vw;
+}
+.util2 {
+height: 2.8vw;
+border-radius: 4px;
+}
+
+
+
+</style>   
+</head>
+<body>
+    <div class="mainbox"> 
+<!-- //box1 -->
+<div class="box1">
+    
+        <img src="./insta.jpeg" alt="Phone Image">
+  
+</div>
+</div>
+<!-- //box2 -->
+    <div class="box2">
+    <div class="box">
+        <div class="Finstagram">Finstagram</div>
+        <form action="#" class="blk">
+            <input class="plc" placeholder="Phone number, username, or email" type="text" aria-label="Username or Email" required>
+            <input class="plc" placeholder="Password" type="password" aria-label="Password" required>
+            <button type="submit" class="btn">Log in</button>
+        </form>
+        <div class="row">
+            <div class="or"><hr>or</div>
+            <div class="rowele "> <svg class="fb" ="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                <linearGradient id="awSgIinfw5_FS5MLHI~A9a_yGcWL8copNNQ_gr1" x1="6.228" x2="42.077" y1="4.896" y2="43.432" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0d61a9"></stop><stop offset="1" stop-color="#16528c"></stop></linearGradient><path fill="url(#awSgIinfw5_FS5MLHI~A9a_yGcWL8copNNQ_gr1)" d="M42,40c0,1.105-0.895,2-2,2H8c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h32	c1.105,0,2,0.895,2,2V40z"></path><path d="M25,38V27h-4v-6h4v-2.138c0-5.042,2.666-7.818,7.505-7.818c1.995,0,3.077,0.14,3.598,0.208	l0.858,0.111L37,12.224L37,17h-3.635C32.237,17,32,18.378,32,19.535V21h4.723l-0.928,6H32v11H25z" opacity=".05"></path><path d="M25.5,37.5v-11h-4v-5h4v-2.638c0-4.788,2.422-7.318,7.005-7.318c1.971,0,3.03,0.138,3.54,0.204	l0.436,0.057l0.02,0.442V16.5h-3.135c-1.623,0-1.865,1.901-1.865,3.035V21.5h4.64l-0.773,5H31.5v11H25.5z" opacity=".07"></path><path fill="#fff" d="M33.365,16H36v-3.754c-0.492-0.064-1.531-0.203-3.495-0.203c-4.101,0-6.505,2.08-6.505,6.819V22h-4v4	h4v11h5V26h3.938l0.618-4H31v-2.465C31,17.661,31.612,16,33.365,16z"></path>
+                </svg> <div>Log in with Facebook</div></div>
+            <div class="rowele">Forgot password?</div>
+        </div>
+    </div>
+    <div class="signup-box">
+        <div class="signup">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+        <div class="utilc">
+            <div ><img class="util1" src="./util1.jpeg" alt=""></div>
+            <div ><img class="util2" src="./uril2.jpeg" alt=""></div>
+        </div>
+    </div>
+
+   
+
+    <footer class="instagram-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Links or content here -->
+                <ul class="footer-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Top Accounts</a></li>
+                    <li><a href="#">Hashtags</a></li>
+                    <li><a href="#">Language</a></li>
+                </ul>
+                <!-- Social Icons -->
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</div> 
+
+
+
+    
+</body>
+</html>
